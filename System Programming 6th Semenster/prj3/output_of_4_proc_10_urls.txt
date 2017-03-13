@@ -1,0 +1,872 @@
+the url already exists...
+the url already exists...
+the url already exists...
+the url already exists...
+the url already exists...
+the url already exists...
+the url already exists...
+the url already exists...
+the url already exists...
+the url already exists...
+
+
+MANAGER AND WORKERS FOLLOW...
+
+
+
+---begin of child proc loop 0 ---getpid = 20724 ---getppid = 20723 ---pid = 0
+CHILD 0 :  is going to wait to read from pipe...
+
+---begin of child proc loop 1 ---getpid = 20725 ---getppid = 20723 ---pid = 0
+CHILD 1 :  is going to wait to read from pipe...
+
+---begin of child proc loop 2 ---getpid = 20726 ---getppid = 20723 ---pid = 0
+CHILD 2 :  is going to wait to read from pipe...
+
++++begin of parent proc loop+++getpid = 20723 +++getppid = 13929 +++pid = 20726
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***www.di.uoa.gr*** se ena eleuthero paidi
+#################################################################
+CHILD 0 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: www.di.uoa.gr
+#################################################################
+CHILD 0 : just read from pipe
+CHILD 0 : i'm going to crawl the url ***www.di.uoa.gr***...
+PARENT: just wrote in pipe. counter = 1
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***www.di.uoa.gr/~ad*** se ena eleuthero paidi
+#################################################################
+CHILD 1 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: www.di.uoa.gr/~ad
+#################################################################
+CHILD 1 : just read from pipe
+CHILD 1 : i'm going to crawl the url ***www.di.uoa.gr/~ad***...
+PARENT: just wrote in pipe. counter = 2
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***www.di.uoa.gr/~ad/index.html*** se ena eleuthero paidi
+PARENT: just wrote in pipe. counter = 3
+#################################################################
+CHILD 2 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: www.di.uoa.gr/~ad/index.html
+#################################################################
+CHILD 2 : just read from pipe
+CHILD 2 : i'm going to crawl the url ***www.di.uoa.gr/~ad/index.html***...
+
++++begin of parent proc loop+++getpid = 20723 +++getppid = 13929 +++pid = 20726
+--21:51:09--  http://www.di.uoa.gr/
+           => `-'
+Resolving www.di.uoa.gr... --21:51:09--  http://www.di.uoa.gr/~ad
+           => `-'
+Resolving www.di.uoa.gr... 195.134.65.119
+Connecting to www.di.uoa.gr|195.134.65.119|:80... 195.134.65.119
+Connecting to www.di.uoa.gr|195.134.65.119|:80... connected.
+HTTP request sent, awaiting response... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://cgi.di.uoa.gr/~ad [following]
+--21:51:09--  http://cgi.di.uoa.gr/~ad
+           => `-'
+Resolving cgi.di.uoa.gr... --21:51:09--  http://www.di.uoa.gr/~ad/index.html
+           => `-'
+Resolving www.di.uoa.gr... 195.134.65.54
+Connecting to cgi.di.uoa.gr|195.134.65.54|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://cgi.di.uoa.gr/~ad/ [following]
+--21:51:09--  http://cgi.di.uoa.gr/~ad/
+           => `-'
+Reusing existing connection to cgi.di.uoa.gr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 5,220 (5.1K) [text/html]
+
+100%[==================================================>] 5,220         --.--K/s
+
+21:51:09 (10.29 MB/s) - `-' saved [5220/5220]
+
+195.134.65.119
+Connecting to www.di.uoa.gr|195.134.65.119|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://cgi.di.uoa.gr/~ad/index.html [following]
+--21:51:09--  http://cgi.di.uoa.gr/~ad/index.html
+           => `-'
+Resolving cgi.di.uoa.gr... 195.134.65.54
+Connecting to cgi.di.uoa.gr|195.134.65.54|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5,220 (5.1K) [text/html]
+
+100%[==================================================>] 5,220         --.--K/s
+
+21:51:09 (11.12 MB/s) - `-' saved [5220/5220]
+
+CHILD 1 : just crawled the url ***www.di.uoa.gr/~ad***...
+CHILD 1 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+
+PARENT: poll returned retval == 1
+PARENT is going to wait to read from pipe
+CHILD 2 : just crawled the url ***www.di.uoa.gr/~ad/index.html***...
+CHILD 2 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+200 OK
+Length: unspecified [text/html]
+
+    [ <=>                                               ] 31,145        --.--K/s
+
+21:51:10 (13.47 MB/s) - `-' saved [31145]
+
+stat: cannot stat `web_file0': No such file or directory
+CHILD 0 : just crawled the url ***www.di.uoa.gr***...
+CHILD 0 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 0 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 0 -------------------------
+
+---begin of child proc loop 0 ---getpid = 20724 ---getppid = 20723 ---pid = 0
+CHILD 0 :  is going to wait to read from pipe...
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***www.di.uoa.gr/~k24-syspro/course.php*** sto paidi 0
+PARENT: just wrote in pipe. counter = 4
+PARENT is going to wait to read from pipe
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.di.uoa.gr/%7Ead/bio.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.di.uoa.gr/%7Ead/bio.html
+#################################################################
+CHILD 0 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: www.di.uoa.gr/~k24-syspro/course.php
+#################################################################
+CHILD 0 : just read from pipe
+CHILD 0 : i'm going to crawl the url ***www.di.uoa.gr/~k24-syspro/course.php***...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.di.uoa.gr/%7Ead/OSdir/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.di.uoa.gr/%7Ead/OSdir/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.di.uoa.gr/%7Ead/k24/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.di.uoa.gr/%7Ead/k24/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.di.uoa.gr/%7Ead/MDE515/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.di.uoa.gr/%7Ead/MDE515/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.di.uoa.gr/%7Ead/MDE519.DOCS/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.di.uoa.gr/%7Ead/MDE519.DOCS/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://cgi.di.uoa.gr/%7Ead/MDE518.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://cgi.di.uoa.gr/%7Ead/MDE518.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://cgi.di.uoa.gr/%7Ead/Publications/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://cgi.di.uoa.gr/%7Ead/Publications/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.wise2012.cs.ucy.ac.cy
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.wise2012.cs.ucy.ac.cy
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.di.uoa.gr/%7Ead/HDMS02.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.di.uoa.gr/%7Ead/HDMS02.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://cgi.di.uoa.gr/%7Ead/MDM2005/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://cgi.di.uoa.gr/%7Ead/MDM2005/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://news-service.stanford.edu/news/2005/june15/jobs-061505.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://news-service.stanford.edu/news/2005/june15/jobs-061505.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.weatherunderground.com/global/GR.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.weatherunderground.com/global/GR.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://whyquit.com/joel/Joel_02_17_smoke_in_lung.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://whyquit.com/joel/Joel_02_17_smoke_in_lung.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.who.int/tobacco/resources/publications/wntd/2007/en/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.who.int/tobacco/resources/publications/wntd/2007/en/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: http://www.who.int/tobacco/resources/publications/wntd/2007/en/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 1 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 1 -------------------------
+
+---begin of child proc loop 1 ---getpid = 20725 ---getppid = 20723 ---pid = 0
+CHILD 1 :  is going to wait to read from pipe...
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***eclass.di.uoa.gr*** sto paidi 1
+PARENT: just wrote in pipe. counter = 5
+PARENT is going to wait to read from pipe
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.di.uoa.gr/%7Ead/bio.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+#################################################################
+CHILD 1 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: eclass.di.uoa.gr
+#################################################################
+CHILD 1 : just read from pipe
+CHILD 1 : i'm going to crawl the url ***eclass.di.uoa.gr***...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.di.uoa.gr/%7Ead/OSdir/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.di.uoa.gr/%7Ead/k24/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.di.uoa.gr/%7Ead/MDE515/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.di.uoa.gr/%7Ead/MDE519.DOCS/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://cgi.di.uoa.gr/%7Ead/MDE518.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://cgi.di.uoa.gr/%7Ead/Publications/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.wise2012.cs.ucy.ac.cy
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.di.uoa.gr/%7Ead/HDMS02.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://cgi.di.uoa.gr/%7Ead/MDM2005/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://news-service.stanford.edu/news/2005/june15/jobs-061505.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.weatherunderground.com/global/GR.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://whyquit.com/joel/Joel_02_17_smoke_in_lung.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.who.int/tobacco/resources/publications/wntd/2007/en/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.who.int/tobacco/resources/publications/wntd/2007/en/index.html
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 2 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 2 -------------------------
+
+---begin of child proc loop 2 ---getpid = 20726 ---getppid = 20723 ---pid = 0
+CHILD 2 :  is going to wait to read from pipe...
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***eclass.uoa.gr*** sto paidi 2
+PARENT: just wrote in pipe. counter = 6
++++++end of parent proc loop+++++++++++++++++++++++++++++++
+#################################################################
+CHILD 2 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: eclass.uoa.gr
+#################################################################
+CHILD 2 : just read from pipe
+CHILD 2 : i'm going to crawl the url ***eclass.uoa.gr***...
+
++++begin of parent proc loop+++getpid = 20723 +++getppid = 13929 +++pid = 20726
+--21:51:11--  http://eclass.uoa.gr/
+           => `-'
+Resolving eclass.uoa.gr... 195.134.100.66
+Connecting to eclass.uoa.gr|195.134.100.66|:80... connected.
+HTTP request sent, awaiting response... --21:51:11--  http://eclass.di.uoa.gr/
+           => `-'
+Resolving eclass.di.uoa.gr... 195.134.65.115
+Connecting to eclass.di.uoa.gr|195.134.65.115|:80... connected.
+HTTP request sent, awaiting response... ./wgetScript.sh: line 22: web_file0: Stale NFS file handle
+cat: web_file0: No such file or directory
+200 OK
+Length: unspecified [text/html]
+
+    [ <=>                                               ] 8,230         --.--K/s
+
+21:51:11 (13.57 MB/s) - `-' saved [8230]
+
+200 OK
+Length: 7,408 (7.2K) [text/html]
+
+100%[==================================================>] 7,408         --.--K/s
+
+21:51:11 (29.58 MB/s) - `-' saved [7408/7408]
+
+CHILD 0 : just crawled the url ***www.di.uoa.gr/~k24-syspro/course.php***...
+CHILD 0 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+
+PARENT: poll returned retval == 1
+PARENT is going to wait to read from pipe
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 0 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 0 -------------------------
+
+---begin of child proc loop 0 ---getpid = 20724 ---getppid = 20723 ---pid = 0
+CHILD 0 :  is going to wait to read from pipe...
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***my-studies.uoa.gr*** sto paidi 0
+PARENT: just wrote in pipe. counter = 7
+PARENT is going to wait to read from pipe
+#################################################################
+CHILD 0 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: my-studies.uoa.gr
+#################################################################
+CHILD 0 : just read from pipe
+CHILD 0 : i'm going to crawl the url ***my-studies.uoa.gr***...
+CHILD 1 : just crawled the url ***eclass.di.uoa.gr***...
+CHILD 1 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: https://eclass.di.uoa.gr/index.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: https://eclass.di.uoa.gr/index.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: https://eclass.di.uoa.gr/index.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 1 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 1 -------------------------
+
+---begin of child proc loop 1 ---getpid = 20725 ---getppid = 20723 ---pid = 0
+CHILD 1 :  is going to wait to read from pipe...
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***webmail.noc.uoa.gr*** sto paidi 1
+PARENT: just wrote in pipe. counter = 8
+PARENT is going to wait to read from pipe
+#################################################################
+CHILD 1 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: webmail.noc.uoa.gr
+#################################################################
+CHILD 1 : just read from pipe
+CHILD 1 : i'm going to crawl the url ***webmail.noc.uoa.gr***...
+CHILD 2 : just crawled the url ***eclass.uoa.gr***...
+CHILD 2 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://eclass.uoa.gr/modules/auth/listfaculte.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://eclass.uoa.gr/modules/auth/listfaculte.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://eclass.uoa.gr/modules/auth/registration.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://eclass.uoa.gr/modules/auth/registration.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://eclass.uoa.gr/manuals/manual.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://eclass.uoa.gr/manuals/manual.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://eclass.uoa.gr/info/about.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://eclass.uoa.gr/info/about.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://eclass.uoa.gr/info/contact.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://eclass.uoa.gr/info/contact.php
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.uoa.gr
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike stin oura tou patera to stoixeio: http://www.uoa.gr
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.uoa.gr
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: http://www.uoa.gr
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+the url already exists...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 2 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 2 -------------------------
+
+---begin of child proc loop 2 ---getpid = 20726 ---getppid = 20723 ---pid = 0
+CHILD 2 :  is going to wait to read from pipe...
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***www.google.gr*** sto paidi 2
+PARENT: just wrote in pipe. counter = 9
++++++end of parent proc loop+++++++++++++++++++++++++++++++
+#################################################################
+CHILD 2 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: www.google.gr
+#################################################################
+CHILD 2 : just read from pipe
+CHILD 2 : i'm going to crawl the url ***www.google.gr***...
+
++++begin of parent proc loop+++getpid = 20723 +++getppid = 13929 +++pid = 20726
+./wgetScript.sh: line 22: web_file0: Stale NFS file handle
+cat: web_file0: No such file or directory
+--21:51:11--  http://webmail.noc.uoa.gr/
+           => `-'
+Resolving webmail.noc.uoa.gr... 195.134.100.116, 195.134.100.114
+Connecting to webmail.noc.uoa.gr|195.134.100.116|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://webmail.noc.uoa.gr/ [following]
+--21:51:11--  https://webmail.noc.uoa.gr/
+           => `-'
+Connecting to webmail.noc.uoa.gr|195.134.100.116|:443... connected.
+ERROR: Certificate verification error for webmail.noc.uoa.gr: unable to get local issuer certificate
+To connect to webmail.noc.uoa.gr insecurely, use `--no-check-certificate'.
+Unable to establish SSL connection.
+--21:51:11--  http://www.google.gr/
+           => `-'
+Resolving www.google.gr... 173.194.35.151, 173.194.35.152, 173.194.35.159
+Connecting to www.google.gr|173.194.35.151|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+
+    [<=>                                                ] 0             --.--K/s             CHILD 0 : just crawled the url ***my-studies.uoa.gr***...
+CHILD 0 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+
+PARENT: poll returned retval == 1
+PARENT is going to wait to read from pipe
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 0 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 0 -------------------------
+
+---begin of child proc loop 0 ---getpid = 20724 ---getppid = 20723 ---pid = 0
+CHILD 0 :  is going to wait to read from pipe...
+PARENT: Tha steilw to prwto stoixeio tis ouras: ***www.google.com*** sto paidi 0
+PARENT: just wrote in pipe. counter = 10
++++++end of parent proc loop+++++++++++++++++++++++++++++++
+#################################################################
+CHILD 0 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: www.google.com
+#################################################################
+CHILD 0 : just read from pipe
+CHILD 0 : i'm going to crawl the url ***www.google.com***...
+
++++++Parent proc ended loop and is going to signal its children, gather statistics and terminate+++++++++++++++++++++++
+    [ <=>                                               ] 12,700        --.--K/s
+
+21:51:11 (231.45 KB/s) - `-' saved [12700]
+
+CHILD 1 : just crawled the url ***webmail.noc.uoa.gr***...
+CHILD 1 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+
+PARENT: poll returned retval == 1
+PARENT is going to wait to read from pipe
+--21:51:12--  http://www.google.com/
+           => `-'
+Resolving www.google.com... 173.194.35.147, 173.194.35.148, 173.194.35.144, ...
+Connecting to www.google.com|173.194.35.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://www.google.gr/ [following]
+--21:51:12--  http://www.google.gr/
+           => `-'
+Resolving www.google.gr... 173.194.35.184, 173.194.35.191, 173.194.35.183
+Connecting to www.google.gr|173.194.35.184|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+
+    [<=>                                                ] 0             --.--K/s             CHILD 2 : just crawled the url ***www.google.gr***...
+CHILD 2 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+    [ <=>                                               ] 12,688        --.--K/s
+
+21:51:12 (245.08 KB/s) - `-' saved [12688]
+
+CHILD 0 : just crawled the url ***www.google.com***...
+CHILD 0 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 0 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 0 -------------------------
+
+---begin of child proc loop 0 ---getpid = 20724 ---getppid = 20723 ---pid = 0
+CHILD 0 :  is going to wait to read from pipe...
+#################################################################
+CHILD 0 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: END
+#################################################################
+PARENT is going to wait to read from pipe
+CHILD 0 : TWRA THA STEILW TA STATISTIKA APO OLA TA CROWL POU EKANA...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--0----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--0----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0----www.di.uoa.gr--0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0----www.di.uoa.gr--0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--0----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--0----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--0--www.di.uoa.gr/~k24-syspro/course.php--0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--0--www.di.uoa.gr/~k24-syspro/course.php--0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--0----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--0----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88--my-studies.uoa.gr--0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88--my-studies.uoa.gr--0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--88----0--0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--88----0--0 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--0--www.google.com--0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--0--www.google.com--0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: 0--0--www.google.com--0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--0--www.google.com--0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 0 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+CHILD 0: waiting for the signal
+CHILD 0 : MOLIS EGRAPSA TA STATISTIKA APO OLA TA CROWL POU EKANA STON PATERA MOU KAI THA TERMATISW...
+
+---begin of child proc loop 0 ---getpid = 20724 ---getppid = 20723 ---pid = 0
+CHILD 0 :  is going to wait to read from pipe...
+PARENT:  just read from pipe
+To teliko i einai: 1
+PARENT is going to wait to read from pipe
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 1 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 1 -------------------------
+
+---begin of child proc loop 1 ---getpid = 20725 ---getppid = 20723 ---pid = 0
+CHILD 1 :  is going to wait to read from pipe...
+#################################################################
+CHILD 1 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: END
+#################################################################
+PARENT is going to wait to read from pipe
+CHILD 1 : TWRA THA STEILW TA STATISTIKA APO OLA TA CROWL POU EKANA...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: 14--5220--www.di.uoa.gr/~ad--1--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 14--5220--www.di.uoa.gr/~ad--1--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: 1--7408--eclass.di.uoa.gr--6--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 1--7408--eclass.di.uoa.gr--6--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: 0--0--webmail.noc.uoa.gr--0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--0--webmail.noc.uoa.gr--0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: 0--0--webmail.noc.uoa.gr--0--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--0--webmail.noc.uoa.gr--0--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 1 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+CHILD 1: waiting for the signal
+CHILD 1 : MOLIS EGRAPSA TA STATISTIKA APO OLA TA CROWL POU EKANA STON PATERA MOU KAI THA TERMATISW...
+
+---begin of child proc loop 1 ---getpid = 20725 ---getppid = 20723 ---pid = 0
+CHILD 1 :  is going to wait to read from pipe...
+PARENT:  just read from pipe
+To teliko i einai: 2
+PARENT is going to wait to read from pipe
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile:
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT:  just read from pipe and is going to write the next url to the child...
+CHILD 2 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 2 -------------------------
+
+---begin of child proc loop 2 ---getpid = 20726 ---getppid = 20723 ---pid = 0
+CHILD 2 :  is going to wait to read from pipe...
+#################################################################
+CHILD 2 : DIABASA AUTO POU MOU ESTEILE O PATERAS MOY EINAI: END
+#################################################################
+PARENT is going to wait to read from pipe
+CHILD 2 : TWRA THA STEILW TA STATISTIKA APO OLA TA CROWL POU EKANA...
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: 14--5220--www.di.uoa.gr/~ad/index.html--1--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 14--5220--www.di.uoa.gr/~ad/index.html--1--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: 7--8230--eclass.uoa.gr--9--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 7--8230--eclass.uoa.gr--9--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: 0--12700--www.google.gr--1--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--12700--www.google.gr--1--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: 0--12700--www.google.gr--1--1
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: prostethike i grammi : 0--12700--www.google.gr--1--1 sto arxeio statistikwn tou patera
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+PARENT: To paidi 2 mou esteile: CHILD_OK
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+CHILD 2: waiting for the signal
+CHILD 2 : MOLIS EGRAPSA TA STATISTIKA APO OLA TA CROWL POU EKANA STON PATERA MOU KAI THA TERMATISW...
+
+---begin of child proc loop 2 ---getpid = 20726 ---getppid = 20723 ---pid = 0
+CHILD 2 :  is going to wait to read from pipe...
+PARENT:  just read from pipe
+To teliko i einai: 3
+I'M THE SIGNAL HANDLER AND I'M GOING TO TERMINATE THE CHILD
+I'M THE SIGNAL HANDLER AND I'M GOING TO TERMINATE THE CHILD
+CHILD 2 : just crawled the url ******...
+I'M THE SIGNAL HANDLER AND I'M GOING TO TERMINATE THE CHILD
+CHILD 2 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+I'M THE SIGNAL HANDLER AND I'M GOING TO TERMINATE THE CHILD
+child read failed
+: Interrupted system call
+CHILD 2 : MOLIS EGRAPSA TA URL POU EKANA CROWL STON PATERA MOU...
+-----end of child proc loop 2 -------------------------
+-----Terminating child proc 2 -------------------------
+cat: temp_img0: Stale NFS file handle
+CHILD 1 : just crawled the url ******...
+CHILD 1 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+CHILD 0 : just crawled the url ******...
+CHILD 0 : TWRA THA GRAPSW TA URL POU EKANA CROWL...
+
+
+
+KILL SIGNAL SENT. ALL OK!
+PARENT: i'm going to create a new child to gather the total statistics...
+fatal - new child execlp failed!: No such file or directory
+PARENT: Just finished with the statistics...
+
+Terminating programm...

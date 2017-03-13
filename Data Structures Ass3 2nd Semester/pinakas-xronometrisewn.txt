@@ -1,0 +1,40 @@
+
+
+RANDOM INPUT					|	SORTED INPUT	
+
+insert_timing_random 2^1 =	0.093000 msec	|	insert_timing_sorted 2^1 =	0.037000 msec
+insert_timing_random 2^2 =	0.097000 msec	|	insert_timing_sorted 2^2 =	0.044000 msec
+insert_timing_random 2^3 =	0.105000 msec	|	insert_timing_sorted 2^3 =	0.062000 msec
+insert_timing_random 2^4 =	0.121000 msec	|	insert_timing_sorted 2^4 =	0.119000 msec
+insert_timing_random 2^5 =	0.156000 msec	|	insert_timing_sorted 2^5 =	0.288000 msec
+insert_timing_random 2^6 =	0.235000 msec	|	insert_timing_sorted 2^6 =	0.840000 msec
+insert_timing_random 2^7 =	0.402000 msec	|	insert_timing_sorted 2^7 =	3.105000 msec
+insert_timing_random 2^8 =	0.773000 msec	|	insert_timing_sorted 2^8 =	9.779000 msec
+insert_timing_random 2^9 =	1.597000 msec	|	insert_timing_sorted 2^9 =	17.204000 msec
+insert_timing_random 2^10 =	3.429000 msec	|	insert_timing_sorted 2^10 =	46.955000 msec
+insert_timing_random 2^11 =	6.410000 msec	|	insert_timing_sorted 2^11 =	162.325000 msec
+insert_timing_random 2^12 =	9.325000 msec	|	insert_timing_sorted 2^12 =	626.492000 msec
+insert_timing_random 2^13 =	16.530000 msec	|	insert_timing_sorted 2^13 =	2609.682000 msec
+insert_timing_random total =	19.700000 msec	|	insert_timing_sorted total =	3818.984000 msec
+print_timing_random =		191.289000 msec	|	print_timing_sorted =		192.082000 msec
+search_timing_random =		21.907000 msec	|	search_timing_sorted =		500.749000 msec
+
+
+RANDOM INPUT					|	SORTED INPUT	
+
+insert_timing_random 2^1 =	0.097000 msec	|	insert_timing_sorted 2^1 =	0.034000 msec
+insert_timing_random 2^2 =	0.101000 msec	|	insert_timing_sorted 2^2 =	0.132000 msec
+insert_timing_random 2^3 =	0.252000 msec	|	insert_timing_sorted 2^3 =	0.340000 msec
+insert_timing_random 2^4 =	0.522000 msec	|	insert_timing_sorted 2^4 =	0.685000 msec
+insert_timing_random 2^5 =	1.130000 msec	|	insert_timing_sorted 2^5 =	1.618000 msec
+insert_timing_random 2^6 =	2.556000 msec	|	insert_timing_sorted 2^6 =	2.370000 msec
+insert_timing_random 2^7 =	4.757000 msec	|	insert_timing_sorted 2^7 =	3.697000 msec
+insert_timing_random 2^8 =	9.994000 msec	|	insert_timing_sorted 2^8 =	7.300000 msec
+insert_timing_random 2^9 =	15.731000 msec	|	insert_timing_sorted 2^9 =	14.109000 msec
+insert_timing_random 2^10 =	23.588000 msec	|	insert_timing_sorted 2^10 =	37.371000 msec
+insert_timing_random 2^11 =	52.765000 msec	|	insert_timing_sorted 2^11 =	73.959000 msec
+insert_timing_random 2^12 =	122.370000 msec	|	insert_timing_sorted 2^12 =	164.626000 msec
+insert_timing_random 2^13 =	243.995000 msec	|	insert_timing_sorted 2^13 =	323.097000 msec
+insert_timing_random total =	286.483000 msec	|	insert_timing_sorted total =	408.424000 msec
+print_timing_random =		195.676000 msec	|	print_timing_sorted =		226.478000 msec
+search_timing_random =		35.366000 msec	|	search_timing_sorted =		14.768000 msec

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Simple DB App</title>
+        <script>
+            function submitForm(form, method) {
+                var vals = [];
+                
+                for (var n=0; n < form.elements.length; n++) {
+                    if(form.elements[n].className === 'toSubmit') {
+                        vals.push(form.elements[n].name + "=" + form.elements[n].value);
+                    }
+                }
+                
+                window.parent.document.getElementById('resultsFrame').contentWindow.location = method + "?" + vals.join("&");
+            }
+        </script>
+    </head>
+    
+    <body>
+        <table width="100%" height="100%"  border='2'>
+            <tr>
+                <td>
+                    <h2>Search Visits</h2>
+                    <form>
+                        Patient Name: <input type="text" class="toSubmit" name="pname" /><br />
+                        Hospital Name: <input type="text" class="toSubmit" name="hname" /><br />
+                        <input type="button" name="button" value="Search" onClick="submitForm(this.form, 'searchVisit')" />
+                    </form>
+                </td>
+
+                <td>
+                    <h2>Insert Visit</h2>
+                    <form>
+                        Patient id: <input type="text" class="toSubmit" name="pid" /><br />
+                        Hospital id: <input type="text" class="toSubmit" name="hid" /><br />
+                        Date: <input type="text" class="toSubmit" name="date" /><br />
+                        Diagnosis id: <input type="text" class="toSubmit" name="diagnosisid" /><br />
+                        <input type="button" name="button" value="Search" onClick="submitForm(this.form, 'insertVisit')" />
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Top N Diseases</h2>
+                    <form>
+                        N: <input type="text" class="toSubmit" name="n" /><br />
+                        <input type="button" name="button" value="Search" onClick="submitForm(this.form, 'selectTopNDiseasesPerHospital')" />
+                    </form>
+                </td>
+
+                <td>
+                    <h2>Trace Disease Infections</h2>
+                    <form>
+                        Disease Name: <input type="text" class="toSubmit" name="dname" /><br />
+                        <input type="button" name="button" value="Search" onClick="submitForm(this.form, 'traceDiseaseInfections')" />
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

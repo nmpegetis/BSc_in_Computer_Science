@@ -1,0 +1,27 @@
+
+linux01:
+marilou       Kyriakid      Maria-Eleni 2911min  /usr/lib/gvfs/gvfsd        linux05.di.uoa.gr
+Kaounas       Alexandros    sdi1100034  221min   /usr/bin/X11/valgrind.bin  91.132.48.111
+Petridis      Nikolaos      sdi1100131  129min   /usr/lib/gvfs/gvfsd        ppp046177125152.dsl.hol.gr
+std05120      St            Panagiota-Aspasia71min    -tcsh                      adsl-148.109.242.87.tellas.gr
+std05134      Mpakos        Eyaggelos   187min   -tcsh                      athedsl-190279.home.otenet.gr
+std06268      Voukena       Thaleia     68min    --oaf-ior-fd=33            linux09.di.uoa.gr
+std07096      Theofanou     Kyriakoula  199min   /usr/lib/bonobo-activation/bonobo-activation-server213-32-96.netrun.cytanet.com.cy
+std07175      Raikakou      Eugenia     286min   mount                      athedsl-01482.home.otenet.gr
+std09140      Plagianakos   Petros      8min     -tcsh                      adsl-173.37.6.26.tellas.gr
+std10003      Ioannou       Konstantinos27min    /usr/lib/gvfs/gvfsd        46-80-218.adsl.cyta.gr
+
+linux03:
+Xatzimixail   Euthymios     std07090    262min   [tcsh]                     athedsl-233542.home.otenet.gr
+
+linux08:
+Pahomis       Spyridon      std07242    267min   /usr/lib/gvfs/gvfsd        ppp046177209166.dsl.hol.gr
+Makrygiorgos  Aggelos       std08105    15min    /org/gtk/gvfs/exec_spaw/0  91.140.102.177
+Makris        Panagiotis    std09091    415min   /usr/lib/gvfs/gvfsd        athedsl-19680.home.otenet.gr
+
+linux05:
+marilou       Kyriakidi     Maria-Eleni 2996min  /usr/lib/gvfs/gvfsd        neverland.di.uoa.gr
+Ioannis       Sakarelis     std03262    538min   /usr/lib/gvfs/gvfsd        gw1.mcgraw-hill.com
+Theodorou     Nikolaos      std10030    191min   /usr/lib/gvfs/gvfsd        ppp141255048146.dsl.hol.gr
+
+linux02:

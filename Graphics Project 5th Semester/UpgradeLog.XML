@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Course5">
+</Property><Property Name="Solution File" Value="D:\Users\TONY\Desktop\Course5_10_08\TEST\Course5.sln">
+</Property><Property Name="User Options File" Value="D:\Users\TONY\Desktop\Course5_10_08\TEST\Course5.suo">
+</Property><Property Name="Date" Value="Τρίτη, 14 Φεβρουαρίου 2012">
+</Property><Property Name="Time" Value="1:59 πμ">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Course5.sln" Description="File successfully backed up as D:\Users\TONY\Desktop\Course5_10_08\TEST\Course5.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Course5.suo" Description="File successfully backed up as D:\Users\TONY\Desktop\Course5_10_08\TEST\Course5.suo.old">
+</Event><Event ErrorLevel="0" Project="Course5" Source="Course5.vcproj" Description="Converting project file 'D:\Users\TONY\Desktop\Course5_10_08\TEST\Course5.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Course5" Source="Course5.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Course5" Source="Course5.vcproj" Description="Done converting to new project file 'D:\Users\TONY\Desktop\Course5_10_08\TEST\Course5.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Course5" Source="Course5.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Course5.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Course5.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,5 @@
+Παρουσιαση paper π.χ.
+
+http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CFQQFjAB&url=http%3A%2F%2Fwww.cs.duke.edu%2F~edels%2FPapers%2F1998-J-03-PocketsMacromolecules.pdf&ei=TarXT6PGM8_BtAbmhLypDw&usg=AFQjCNGP8T_tSx4fy4LVCrrl-1nkgdF8Mw&sig2=72QVVgiwKaEVZD8O49HAmQ
+
+και λογισμικού a-shapes στη cgal: Πχ πώς υλοποιούνται οι πραξεις του άρθρου?
